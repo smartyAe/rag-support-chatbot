@@ -1,0 +1,10 @@
+[project]
+name = "docs-assistant"
+version = "1.0.0"
+description = "Support chatbot that answers only from your documents, with sources (RAG)"
+requires-python = ">=3.10"
+dependencies = ["fastapi>=0.115", "uvicorn>=0.32", "openai>=1.57"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
